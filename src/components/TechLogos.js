@@ -16,6 +16,12 @@ const ImgLogos = styled.img`
     height:100px;
     margin-right:20px;
     
+    @media and (min-width:736px){
+        
+        width:60px;
+        height:60px;
+    }
+    
 `
 const ReactLogoContainer = styled.div`
     display:inline-block;
@@ -24,6 +30,12 @@ const ReactLogoContainer = styled.div`
     img{
         width:70px;
         height:70px;
+    }
+    @media and (min-width:736px){
+        img{
+            width:50px;
+            height:50px;
+        }
     }
 `
 export default ({estado})=>(

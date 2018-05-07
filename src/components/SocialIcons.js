@@ -19,9 +19,9 @@ const BotonSocial = styled.a`
 export default ({estado})=>(
     <Container>
         <BotonSocial href="https://www.facebook.com/luis.solano27" target="_blank"><i className="fa fa-facebook fa-2x"></i></BotonSocial>
-        <BotonSocial href=""><i className="fa fa-twitter fa-2x"></i></BotonSocial>
-        <BotonSocial href=""><i className="fa fa-instagram fa-2x"></i></BotonSocial>
-        <BotonSocial href=""><i className="fa fa-linkedin fa-2x"></i></BotonSocial>
-        <BotonSocial href=""><i className="fa fa-youtube fa-2x"></i></BotonSocial>
+        <BotonSocial href="https://twitter.com/gliberte" target="_blank"><i className="fa fa-twitter fa-2x"></i></BotonSocial>
+        <BotonSocial href="https://www.instagram.com/gliberte/" target="_blank"><i className="fa fa-instagram fa-2x"></i></BotonSocial>
+        <BotonSocial href="https://www.linkedin.com/in/luis-solano-07296657/" target="_blank"><i className="fa fa-linkedin fa-2x"></i></BotonSocial>
+        <BotonSocial href="https://www.youtube.com/channel/UC-oGMEod30SgMQ1JYlMDrtg" target="_blank"><i className="fa fa-youtube fa-2x"></i></BotonSocial>
     </Container>
 )
