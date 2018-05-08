@@ -10,6 +10,7 @@ const Container = styled.div`
   margin:0 auto;
   margin-top:80px;
   max-width:900px;
+  height:100vh;
   
 `
 

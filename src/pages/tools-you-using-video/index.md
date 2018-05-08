@@ -3,7 +3,7 @@ title: Las Herramientas que actualmente usas probablemente esten mal
 date: "2018-05-08T22:40:32.169Z"
 ---
 
-Estas dos chicas: Eli Schutze y Sara Vieira, ingenieras de software, discuten desenfadadamente sobre las opciones tecnológicas que nosotros los desarrolladores web optamos por usar. Es hilarante la manera cómo ellas se proponen contraponer los pros y los contras de cada opción tecnológica, ejecutando un antagonismo simulado, similar a los que existen entre los radicales y totalitarios.
+Estas dos chicas: **Eli Schutze** y **Sara Vieira**, ingenieras de software, discuten desenfadadamente sobre las opciones tecnológicas que nosotros los desarrolladores web optamos por usar. Es hilarante la manera cómo ellas se proponen contraponer los pros y los contras de cada opción tecnológica, ejecutando un antagonismo simulado, similar a los que existen entre los radicales y totalitarios.
 
 Disfruten el video:
 
