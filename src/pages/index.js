@@ -32,6 +32,14 @@ const Inner = styled.div`
         opacity:${props => props.estado === "entering" ? 0 : 1};
         transform:translateY(${props => props.estado === "entering" ? "-50px" : 0});
         margin-bottom:0;
+        text-shadow:4px 4px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+        @media (max-width:756px){
+            font-size:40px;
+        }
 
     }
     span{

@@ -13,6 +13,9 @@ const BotonSocial = styled.a`
     &:hover{
         color:#fff000;
     }
+    @media (max-width:756px){
+        font-size:15px;
+    }
 
 `
 

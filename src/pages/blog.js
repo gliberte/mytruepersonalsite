@@ -2,8 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
+
 
 import Bio from '../components/Bio'
+const Container = styled.div`
+  margin:0 auto;
+  margin-top:80px;
+  max-width:900px;
+  
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,7 +19,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <Container>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
@@ -28,7 +36,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-      </div>
+      </Container>
     )
   }
 }

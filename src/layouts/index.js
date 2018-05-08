@@ -3,16 +3,22 @@ import Link from 'gatsby-link'
 import styled,{injectGlobal} from 'styled-components'
 import 'font-awesome/css/font-awesome.css'
 import Footer from '../components/Footer'
+import Menu from '../components/Menu'
 
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Acme|Pangolin');;
   body{
     margin:0;
+    width:100%;
+    height:100vh;
   }
 `
 
 const Contenedor = styled.div`
   margin:0;
+  padding:0;
+  width:100%;
+  
 `
 
 class Template extends React.Component {
@@ -32,6 +38,7 @@ class Template extends React.Component {
     
     return (
       <Contenedor>
+        <Menu/>
         {children()}
         <Footer/>
       </Contenedor>
