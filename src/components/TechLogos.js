@@ -6,7 +6,7 @@ import ReactNativeLogo from '../img/native_logo.png'
 import GraphqlLogo from '../img/graphql_logo.svg'
 
 const Contenedor = styled.div`
-    margin-top:2em;
+    margin-top:7em;
     transition:all 0.6s ease-in-out;
     opacity:${props => props.estado === "entering" ? 0 : 1};
     transform:translateY(${props => props.estado === "entering" ? "-50px" : 0});

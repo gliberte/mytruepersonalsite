@@ -45,7 +45,7 @@ const Inner = styled.div`
     span{
         color:white;
         font-style:italic;
-        margin-bottom:4em;
+        
     }
 `
 

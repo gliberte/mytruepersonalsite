@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 
 const Container = styled.div`
+    margin-bottom:2em;
 `
 const BotonSocial = styled.a`
     color:white;
