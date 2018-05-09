@@ -4,6 +4,7 @@ import NodeLogo from '../img/node_logo.svg'
 import ReactLogo from '../img/react.svg'
 import ReactNativeLogo from '../img/native_logo.png'
 import GraphqlLogo from '../img/graphql_logo.svg'
+import MongoLogo from '../img/mongodb-logo-white.png'
 
 const Contenedor = styled.div`
     margin-top:7em;
@@ -47,6 +48,10 @@ export default ({ estado }) => (
         <ReactLogoContainer>
             <img src={GraphqlLogo} alt="" />
             <span>GraphQL</span>
+        </ReactLogoContainer>
+        <ReactLogoContainer>
+            <img src={MongoLogo} alt="" />
+            <span>MongoDB</span>
         </ReactLogoContainer>
     </Contenedor>
  

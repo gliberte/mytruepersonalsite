@@ -45,8 +45,10 @@ const Inner = styled.div`
     span{
         color:white;
         font-style:italic;
+        display:block;
         
     }
+
 `
 
 export default class extends React.Component {
@@ -59,6 +61,7 @@ export default class extends React.Component {
                             <SocialIcons/>
                             <p>hola,soy gliberte</p>
                             <span>Programador web, full-stack</span>
+                            <span>Javascript rules!</span>
                             <TechLogos estado={state}/>
                         </Inner>
                         

@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import Transition from 'react-transition-group/Transition'
 
 
 import Bio from '../components/Bio'
@@ -11,6 +12,9 @@ const Container = styled.div`
   margin-top:80px;
   max-width:900px;
   height:100vh;
+  transition:all 0.4s ease-in-out;
+  opacity:${props=>props.estado === "entering" ? 0:1};
+  transform:translateY(${props=>props.estado === "entering" ? "-24px" : 0});
   
 `
 
@@ -20,7 +24,9 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <Container>
+      <Transition appear={true} in={true} timeout={400}>
+      {state=>(
+        <Container estado={state}>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
@@ -38,6 +44,9 @@ class BlogIndex extends React.Component {
           )
         })}
       </Container>
+      )}
+      </Transition>
+      
     )
   }
 }
