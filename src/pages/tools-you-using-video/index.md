@@ -11,3 +11,4 @@ Disfruten el video:
 
 Me encanta la parte en la que se refieren a Angular 1. Resulta que yo también sigo teniendo pesadillas con ese bendito RootScope. 
 Al finalizar, incluso hablan de la adopción de un perro o un gato como mascota, la eterna rivalidad entre los adoradores de gatos y los que prefieren a los perros.
+En particular, me encanta el estilo de **Sara Vieira**. En sus charlas es extremadamente informal. 

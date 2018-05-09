@@ -26,7 +26,7 @@ const ContentEnd = styled.div`
     padding:10px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    justify-items:start;
+    justify-items:center;
     align-items:center;
     p{
         margin:0;
