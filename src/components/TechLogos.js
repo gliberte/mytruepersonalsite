@@ -29,9 +29,11 @@ const ReactLogoContainer = styled.div`
 
 `
 export default ({ estado }) => (
+   
     <Contenedor estado={estado}>
         <ReactLogoContainer>
             <img src={NodeLogo} alt="logo de node.js" />
+            <span>Node.js</span>
         </ReactLogoContainer>
 
         <ReactLogoContainer>
@@ -47,4 +49,6 @@ export default ({ estado }) => (
             <span>GraphQL</span>
         </ReactLogoContainer>
     </Contenedor>
+ 
+    
 )

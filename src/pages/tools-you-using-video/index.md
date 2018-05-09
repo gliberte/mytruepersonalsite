@@ -10,3 +10,4 @@ Disfruten el video:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhI3yKb2-HM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Me encanta la parte en la que se refieren a Angular 1. Resulta que yo también sigo teniendo pesadillas con ese bendito RootScope. 
+Al finalizar, incluso hablan de la adopción de un perro o un gato como mascota, la eterna rivalidad entre los adoradores de gatos y los que prefieren a los perros.
