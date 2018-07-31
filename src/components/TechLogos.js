@@ -39,11 +39,7 @@ export default ({ estado }) => (
 
         <ReactLogoContainer>
             <img src={ReactLogo} alt="" />
-            <span>React</span>
-        </ReactLogoContainer>
-        <ReactLogoContainer>
-            <img src={ReactLogo} alt="" />
-            <span>React Native</span>
+            <span>React, React Native</span>
         </ReactLogoContainer>
         <ReactLogoContainer>
             <img src={GraphqlLogo} alt="" />

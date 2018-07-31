@@ -9,25 +9,45 @@ import Bio from '../components/Bio'
 
 
 const ContainerBlog = styled.div`
-  display:grid;
-  max-width:1000px;
+  max-width:95%;
   margin: 200px auto;
-  grid-template-columns:3fr 12fr 5fr;
-  grid-gap:10px 50px;
-  *{
-    grid-column: 2 / -2;
-  }
-  img{
-    margin:0;
-    grid-column: 1 / -1;
+  
+
+`
+const Encabezado = styled.div`
+
+  max-width:900px;
+  margin:0 auto;
+
+`
+const Fecha = styled.p`
+  font-size:18px;
+  font-style:italic;
+  
+`
+const Contenido = styled.div`
+  display:grid;
+  
+  grid-template-columns:2fr 8fr 2fr;
+  p,h1,h2,h3,h4,div{
+    grid-column:2/-2;
   }
   blockquote{
-    grid-column: 1 / -1;
-    font-size:35px;
-    font-style:italic;
-    text-align:center;
-    margin:0;
+    grid-column:1/2;
   }
+  .imagen{
+   
+    width:80%;
+    margin:0 auto;
+    
+    img{
+      
+      width:100%;
+      border:1px solid #ccc;
+    }
+  }
+ 
+
 `
 
 class BlogPostTemplate extends React.Component {
@@ -39,10 +59,12 @@ class BlogPostTemplate extends React.Component {
     return (
       <ContainerBlog>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Encabezado>
+          <h1>{post.frontmatter.title}</h1>
+          <Fecha>{post.frontmatter.date}</Fecha>
+        </Encabezado>
+
+        <Contenido dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
         <Bio />
 

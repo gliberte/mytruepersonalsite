@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import MyLogo from '../img/logo200x60.png'
+import MyLogo from '../img/mylogo.png'
 
 const Container = styled.nav`
     position:fixed;
@@ -13,7 +13,7 @@ const Container = styled.nav`
     height:80px;
     border-bottom:1px solid rgba(255,255,255,0.8);
     z-index:1;
-    background:rgba(0,0,0,0.6);
+    background:rgba(156,204,101 ,0.6);
     
 
 `
@@ -57,8 +57,8 @@ const ContainerMenu = styled.div`
     }
 `
 const MyLogoImg = styled.img`
-    width:200px;
     height:60px;
+    color:white;
     margin-top:10px;
     @media (max-width:756px){
         width:120px;

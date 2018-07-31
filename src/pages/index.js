@@ -59,13 +59,12 @@ export default class extends React.Component {
                     <Hero estado={state}>
                         <Inner estado={state}>
                             <SocialIcons/>
-                            <p>hola,soy gliberte</p>
+                            <p>hola, me llamo Luis Solano</p>
                             <span>Programador web, full-stack</span>
                             <span>Javascript rules!</span>
                             <TechLogos estado={state}/>
                         </Inner>
                         
-
                     </Hero>
                 )}
             </Transition>
