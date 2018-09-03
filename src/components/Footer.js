@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SocialIcons from './SocialIcons'
 
 const Footer = styled.footer`
-    grid-row: 2/3;
+    grid-area:footer;
 `
 const Contenedor = styled.div`
     margin:0;
@@ -30,6 +30,11 @@ const ContentEnd = styled.div`
     align-items:center;
     p{
         margin:0;
+        
+    }
+    @media (max-width:600px){
+        grid-template-columns:1fr;
+        grid-gap:6px;
     }
 
 

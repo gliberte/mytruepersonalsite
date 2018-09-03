@@ -11,12 +11,13 @@ import Bio from '../components/Bio'
 const ContainerBlog = styled.div`
   max-width:95%;
   margin: 200px auto;
+  grid-area:body;
   
 
 `
 const Encabezado = styled.div`
 
-  max-width:900px;
+  
   margin:0 auto;
 
 `
@@ -44,6 +45,19 @@ const Contenido = styled.div`
       
       width:100%;
       border:1px solid #ccc;
+    }
+  }
+
+  @media (max-width:600px){
+    grid-template-columns:1fr;
+    p,h1,h2,h3,h4,div{
+      grid-column:1/-1;
+    }
+    blockquote{
+    grid-column:1/-1;
+  }
+    pre{
+      grid-column:1/-1;
     }
   }
  

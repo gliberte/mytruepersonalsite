@@ -8,13 +8,14 @@ import Transition from 'react-transition-group/Transition'
 
 import Bio from '../components/Bio'
 const Container = styled.div`
+  grid-area:body;
+  width:95%;
   margin:0 auto;
   margin-top:80px;
   max-width:900px;
-  height:100vh;
   transition:all 0.4s ease-in-out;
-  opacity:${props=>props.estado === "entering" ? 0:1};
-  transform:translateY(${props=>props.estado === "entering" ? "-24px" : 0});
+  opacity:${props => props.estado === "entering" ? 0 : 1};
+  transform:translateY(${props => props.estado === "entering" ? "-24px" : 0});
   
 `
 
@@ -25,28 +26,28 @@ class BlogIndex extends React.Component {
 
     return (
       <Transition appear={true} in={true} timeout={400}>
-      {state=>(
-        <Container estado={state}>
-        <Helmet title={siteTitle} />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
-      </Container>
-      )}
+        {state => (
+          <Container estado={state}>
+            <Helmet title={siteTitle} />
+            <Bio />
+            {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
+                  <h3>
+                    <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </div>
+              )
+            })}
+          </Container>
+        )}
       </Transition>
-      
+
     )
   }
 }

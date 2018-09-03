@@ -14,6 +14,11 @@ const Contenedor = styled.div`
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(70px,1fr));
     grid-gap:20px;
+    @media (max-width:600px){
+        grid-template-columns:100px 100px;
+        grid-gap:50px;
+        justify-content:center;
+    }
 `
 const ImgLogos = styled.img`
     

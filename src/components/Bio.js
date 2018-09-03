@@ -6,21 +6,29 @@ const ImageMe = styled.img`
   width:80px;
   height:80px;
   border-radius:50%;
+  
+`
+const Container = styled.p`
+  @media (max-width:600px){
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+  }
 `
 
 class Bio extends React.Component {
   render() {
     return (
-      <p>
+      <Container>
         <ImageMe
           src={profilePic}
           alt={`Kyle Mathews`}
         />
-        Autor <strong>Luis Solano</strong>. Vivo en Panama{' '}
+        <p>Autor: <strong>Luis Solano</strong>. Vivo en Panama{' '}
         <a href="https://twitter.com/gliberte">
           Sigueme por Twitter
-        </a>
-      </p>
+        </a></p>
+      </Container>
     )
   }
 }

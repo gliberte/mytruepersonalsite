@@ -9,9 +9,10 @@ const Container = styled.section`
 `
 
 const Hero = styled.div`
-   height:100vh;
     background:url(${ImgCover});
+    grid-area:body;
     background-size:cover;
+    height:100vh;
     display:grid;
     justify-content:center;
     align-items:center;
