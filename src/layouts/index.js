@@ -6,7 +6,8 @@ import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Acme|Pangolin');;
+@import url('https://fonts.googleapis.com/css?family=Acme|Pangolin');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
   body{
     margin:0;
     width:100%;
