@@ -12,7 +12,7 @@ const Container = styled.div`
     width:100%;
     border-bottom:1px solid rgba(255,255,255,0.8);
     z-index:1;
-    background:rgba(156,204,101 ,0.6);
+    background:rgba(0,0,0,1);
     @media (max-width:600px){
         grid-template-columns:1fr;
 
