@@ -20,6 +20,17 @@ const Container = styled.div`
     
 
 `
+const MyLink = styled(Link)`    
+
+    color:white;
+    &:visited{
+        color:yellow;
+    }
+    &:hover{
+        color:white;
+    }
+    
+`
 const LogoContainer = styled.div`
   
     @media (max-width:756px){
@@ -38,21 +49,7 @@ const ContainerMenu = styled.div`
             justify-content:center;
         }
     }
-    ul li{
-        display:inline-block;
-        margin-right:20px;
-
-    }
-    ul li a{
-        text-decoration:none;
-        color:#fff;
-        font-size:16px;
-        font-weight:lighter;
-    }
-    ul li a:hover{
-        color:#fff000;
-        text-shadow:0 0 20px #fff000;
-    }
+    
     @media (max-width:756px){
         margin:0 auto;
     }
@@ -73,9 +70,9 @@ export default () => (
         </LogoContainer>
         <ContainerMenu>
             <div>
-                <div><Link to="/">Home</Link></div>
-                <div><Link to="/blog">Blog</Link></div>
-                <div><Link to="/portafolio">Portafolio</Link></div>
+                <div><MyLink to="/">Home</MyLink></div>
+                <div><MyLink to="/blog">Blog</MyLink></div>
+                <div><MyLink to="/portafolio">Portafolio</MyLink></div>
             </div>
         </ContainerMenu>
     </Container>
