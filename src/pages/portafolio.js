@@ -70,7 +70,7 @@ class Portafolio extends React.Component{
         return (
             <Container>
                 <Encabezado>
-                    <p>Próximamente</p>
+                    <p>Algunos Proyectos Realizados</p>
                 </Encabezado>
                 <ItemPortaforlio>
                     <div>
