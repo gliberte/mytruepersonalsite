@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import fondo from '../img/backencabezado.jpeg'
 
 import barraza from '../img/barraza.jpg'
+import yarisite from '../img/yarisite.jpg'
 
 import Mongodb from '../img/mongodb-logo-white.png'
 import grapql from '../img/graphql_logo.svg'
@@ -26,12 +27,22 @@ const Encabezado = styled.div`
         font-family: 'Oswald', sans-serif;
     }
 
+    @media (max-width:600px){
+        height:300px;
+        font-size:36px;
+    }
+
 `
 const ItemPortaforlio = styled.div`
     width:100%;
     display:grid;
     grid-template-columns:1fr 1fr;
     padding:20px;
+    margin:100px auto;
+
+    @media (max-width:600px){
+        grid-template-columns:1fr;
+    }
     
 `
 const Descripcion = styled.p`
@@ -62,6 +73,11 @@ const Tecnologias = styled.div`
 `
 const ContainerImage = styled.div`
     box-shadow:0 5px 7px 0 rgba(0,0,0,0.6);
+    margin:0 50px;
+
+    @media (max-width:600px){
+        margin:10px 10px;
+    }
 `
 
 
@@ -89,7 +105,24 @@ class Portafolio extends React.Component{
 
 
                     </div>
-                    <ContainerImage><img src={barraza} alt="barraza"/></ContainerImage>
+                    <ContainerImage> <a href="https://youtu.be/eopJSG9d6zs" target="_blank"><img src={barraza} alt="barraza"/></a></ContainerImage>
+                </ItemPortaforlio>
+                <ItemPortaforlio>
+                    
+                    <div>
+                        <h2>Web Site personal y portafolio</h2>
+                        <Descripcion>Sencillo website para una profesional en diseño gráfico. Portafolio de trabajo. Desplegado en produccion a través de Netlify
+
+                        </Descripcion>
+                        <Tecnologias>
+                            
+                            <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
+                            <p><a href="http://netlify.com" target="_blank">Netlify</a></p>
+                        </Tecnologias>
+
+
+                    </div>
+                    <ContainerImage> <a href="https://youtu.be/4TSw7wAo2G8" target="_blank"><img src={yarisite} alt="yarisite"/></a></ContainerImage>
                 </ItemPortaforlio>
             </Container>
         )
