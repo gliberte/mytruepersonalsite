@@ -105,7 +105,7 @@ class Portafolio extends React.Component{
                             <p><a href="http://graphql.org" target="_blank">GraphQL</a></p>
                             <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
                             <p><a href="http://heroku.com" target="_blank">Heroku</a></p>
-                            <p><a href="http://cloudinary.com">Cloudinary</a></p>
+                            <p><a href="http://cloudinary.com" target="_blank">Cloudinary</a></p>
                         </Tecnologias>
 
 
