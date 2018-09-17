@@ -7,6 +7,7 @@ import yarisite from '../img/yarisite.jpg'
 
 import Mongodb from '../img/mongodb-logo-white.png'
 import grapql from '../img/graphql_logo.svg'
+import Hildesite from '../img/hildesite.jpg'
 
 const Container = styled.div`
 
@@ -88,6 +89,29 @@ class Portafolio extends React.Component{
                 <Encabezado>
                     <p>Algunos Proyectos Realizados</p>
                 </Encabezado>
+                <ItemPortaforlio>
+                    
+                    <div>
+                        <h2>El Bochinchoso, WebSite de caricaturas</h2>
+                        <Descripcion>Sitio y aplicación web con contenido servido mediante modernas tecnologías web tales como React.js, GraphQL, MongoDb y Node.js. Mas que un sitio web, 
+                            es una aplicación web dinámica. Los usuarios que se registran pueden marcar sus caricaturas favoritas. El trabajo artístico pertenece al genial caricaturista panameño 
+                            Hildebrando Sucre. Sus caricaturas y ocurrencias son de corte político - social.
+
+                        </Descripcion>
+                        <Tecnologias>
+                            
+                            <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
+                            <p><a href="http://nodejs.org" target="_blank">Node.js</a></p>
+                            <p><a href="http://graphql.org" target="_blank">GraphQL</a></p>
+                            <p><a href="http://reactjs.org" target="_blank">React.js</a></p>
+                            <p><a href="http://heroku.com" target="_blank">Heroku</a></p>
+                            <p><a href="http://cloudinary.com">Cloudinary</a></p>
+                        </Tecnologias>
+
+
+                    </div>
+                    <ContainerImage> <a href="https://youtu.be/PgLM_RzmKB8" target="_blank"><img src={Hildesite} alt="yarisite"/></a></ContainerImage>
+                </ItemPortaforlio>
                 <ItemPortaforlio>
                     <div>
                         <h2>Mapa Interactivo para análisis de ventas</h2>
