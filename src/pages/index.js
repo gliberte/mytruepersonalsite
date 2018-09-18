@@ -58,14 +58,19 @@ export default class extends React.Component {
             <Transition appear={true} in={true} timeout={400}>
                 {state => (
                     <Hero estado={state}>
-                        <Inner estado={state}>
-                            <SocialIcons/>
-                            <p>hola, me llamo Luis Solano</p>
-                            <span>Programador web, full-stack</span>
-                            <span>Javascript rules!</span>
-                            <TechLogos estado={state}/>
-                        </Inner>
-                        
+                        <Transition appear={true} in={true} timeout={500}>
+                            {state2 => (
+                                <Inner estado={state2}>
+                                    <SocialIcons />
+                                    <p>hola, me llamo Luis Solano</p>
+                                    <span>Programador web, full-stack</span>
+                                    <span>Javascript rules!</span>
+                                    <TechLogos estado={state2} />
+                                </Inner>
+                            )}
+                        </Transition>
+
+
                     </Hero>
                 )}
             </Transition>
